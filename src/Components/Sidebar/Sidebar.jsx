@@ -2,6 +2,7 @@ import React from 'react'
 import './Sidebar.css'
 import add_product_icon from '../Assets/Product_Cart.svg'
 import list_product_icon from '../Assets/Product_list_icon.svg'
+import navprofileIcon from '../Assets/user.png'
 import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
@@ -19,7 +20,12 @@ const Sidebar = () => {
           <p>Product List</p>
         </div>
       </Link>
-      
+      <Link to='/adminuserlist' style={{ textDecoration: 'none' }}>
+        <div className="sidebar-item">
+          <img src={navprofileIcon} alt="icon" />
+          <p>User Details</p>
+        </div>
+      </Link>
     </div>
   )
 }

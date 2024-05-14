@@ -2,6 +2,7 @@ import React from "react";
 import "./CSS/Admin.css";
 import Sidebar from "../Components/Sidebar/Sidebar";
 import AddProduct from "../Components/AddProduct/AddProduct";
+import AdminUserList from "../Components/AdminUserList/AdminUserList";
 import { Route, Routes } from "react-router-dom";
 import ListProduct from "../Components/ListProduct/ListProduct";
 
@@ -13,7 +14,11 @@ const Admin = () => {
       <Routes>
         <Route path="/addproduct" element={<AddProduct />} />
         <Route path="/listproduct" element={<ListProduct />} />
-      </Routes>
+        
+        
+          <Route path="/adminuserlist" element={<AdminUserList />} />
+        </Routes>
+    
     </div>
   );
 };
